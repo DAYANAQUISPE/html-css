@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+        SELETORES PERSONALIZADOS
+        
+
+        #  = id
+        .  = class
+        :  = pseudo-class
+        :: = pseudo-element
+        >  = children
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: rgb(177, 32, 32);
+            text-decoration: none; /*text-decoration tira todo o sublinhado do link*/
+            font-weight: bold; /**deixa os links em negrito/
+        }
+
+        a:visited {/*:visit é outro exemplo de pseudo-classe, que quer dizer que este site já foi visitado*/
+            color: rgb(247, 97, 97);
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline; /*quando passado o mouse em cima temos o sublinhado e cor do link fica preta.*/
+        }
+
+        a:active {/*:active é outro peseudo-classe, e quer dizer que quando for clicado vai ficar verde.*/
+            color: green;
+        }
+
+         /*////////////////// Apartir daqui é sobre pseudo-elemento//////*/
+
+        .especial {
+            background-color: rgb(26, 73, 226);
+            color: white;
+        }
+
+        .especial::before { /* significa Depois de todos os links vou avisar algo , tipo que esse palavra escrita é um link*/
+            content: '[link] '; /*Aqui por causa do pseudo elemento podemos adicionar textos sem modificar o html*/
+        }
+
+        .especial::after {
+            content: ' <--';
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <h1>Personalisando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/"target="black" class="especial">Canal do YouTube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank" class="especial">Site do CursoemVídeo</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+   <style>
+    #exemplo{/*Este foi eu que fiz dayana, com o exemplo que guanabara deu eque está no meu caderno*/
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+        border: 1px solid black;
+        outline: 6px;
+        outline-style: dashed;
+        outline-color: aqua;
+        margin: 40px auto 20px auto; /*consigo deixar isso centralizado horizontalmenete*/
+    }
+
+    #exemplo2{ /*Este'H1' é box-level por padrão, se eu quiser transformar ele en inline é so eu colocar 'display: inline;' e quando é inline não posso fazer hight e widht, porque ele é inline.'.*/
+        display: block;
+         /*display: block, quer dizer que ele vai ser um elemento do tipo box-level, que é um tipo de caixa, tem explicação no meu caderno. Dá para mudar esse display para flex.*/
+        background-color: rgb(231, 41, 231);
+        height: 300px;
+        width: 300px;
+        /*Embaixo temos 3 tipos de border mais utilizados e podemos simplificar eles dessa forma 'border: 10px solid rgb(12, 128, 118);'. */
+        border-width: 10px;
+        border-style: solid;
+        border-color: rgb(12, 128, 118);
+        padding: 10px 10px 10px 20px;
+        margin: 10px 10px 10px 10px;
+        /*margin: auto; /*deixa centralizado horizontalmente*/
+        text-align: center;/*deixa o texto centralizado horizontalmente, mas só não faz com que o texto fique centralizado no quadrado*/
+    }
+
+    a{/** 'a' é um display-inline , não posso fazer configuração de width e height, mas posso transforma-lo em display: block ou seja em box-level*/
+        border-width: 10px;
+        border-style: solid;
+        border-color: rgb(255, 84, 84);
+        padding: 50px 30px 10px 10px;
+        margin: 10px 10px 10px 10px;
+        
+        
+    }
+   </style>
+        
+</head>
+<body>
+    <h1 id="exemplo">Exemplo da Dayana</h1>
+
+    <br>
+
+    <h1 id="exemplo2">Exemplo de caixa box-level</h1><p>oiiiii</p>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo funciona.</p>
+</body>
+</html>

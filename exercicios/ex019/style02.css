@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1#principal {
+    color: green;
+    background-color: brown;
+
+    
+
+
+}
+
+h1 {
+    color: purple;
+    background-color: bisque;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+}
+#titulo{
+    border: 1px solid black;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(185, 185, 218);
+}
+
+#mercado {
+    background-color: aqua;
+    width: 300px;
+    border: 1px solid green;
+}
+section {
+    
+    width: 250px;
+}

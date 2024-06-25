@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        div {
+            display: inline-block; /* display: inline-block é tudo na mesma linha.*/
+            background-color: lightgray;
+            text-align: center;
+            height: 150px;
+            width: 150px;
+            border: 1px solid black;
+        }
+
+        div:hover { /* :hover é uma pseudo-classe, as pseudo-classes tem que estar relacionadas a um elemento ou uma classe ou relacinaas a um estado de determimado elemento.ex: se ele ta ativo, marcado, vazio etc., entrão sim podemos configurar o estado.*/ /* HOVER é quando eu passar o mause em cima.*/
+                background-color: yellow;
+        }
+
+        .outro {
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            display: inline-block;
+            background-color: rgb(186, 95, 214);
+        }
+        section{
+            border: 1px, solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+    <section>
+        <div class="outro">A</div>
+        <div class="outro">B</div>
+        <div class="outro">C</div>
+        <div class="outro">D</div>
+    </section>
+</body>
+</html>
