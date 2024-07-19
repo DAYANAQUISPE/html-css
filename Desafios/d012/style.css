@@ -1,1 +1,69 @@
 @charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    /* tamanho minimo da altura e não largura pois seria vw*/
+    min-height: 100vh;
+    background-color: darkgrey;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1 {
+    padding: 50px;
+    
+    /* deixa as letras em maiusculo porem pequenas */
+    font-variant: small-caps;
+}
+
+header > p {
+    padding-bottom: 50px; 
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    /* ajuda na hora de ixibir em telas pequenas o vh, tipo se adapta */
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    /* deixa um espaço entre os linhas do paragrafo */
+    line-height: 2em;
+    padding: 30px;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(63, 63, 63);
+    color: white;
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.247);
+    width: 400px;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
