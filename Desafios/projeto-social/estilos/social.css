@@ -8,15 +8,13 @@
 /* para esconder o scrollbar, a barra lateral de rolagem */
 ::-webkit-scrollbar{
     width: 0px;
-    height: 0px
-    ;
+    height: 0px;
 }
 
 img {
     width: 100vw;
-
-
 }
+
 a {
     /* mostra o a ACESSE em baixo */
     display: block;
