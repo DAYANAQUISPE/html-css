@@ -41,3 +41,27 @@ iframe#tela {
     width: 266px;
     height: 471px;
 }
+
+section#redes-sociais {
+    text-align: right;
+}
+
+section#redes-sociais img{
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.400);
+    /* faz com que o border do :hover  faça prte da imagem sem cusar aquale crescimento de borda fazendo com que movimente as outras imagens */
+    box-sizing: border-box;
+}
+
+section#redes-sociais img:hover {
+    /* borda tranparente */
+    border: 2px solid rgba(255, 255, 255, 0.616);
+    /* assim que eu passar o mouse em cima ocorre uma translate de 3px pra cima e pro lado */
+    transform: translate(-3px, -3px);
+
+    /* da um efeito de botao sendo seelcionado */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.616);
+    transition: transform 0.3s, border .4s;
+}
