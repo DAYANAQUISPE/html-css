@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexible Box</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
         div.conteiner {
             background-color: lightsalmon;
+
             display: flex;
+            flex-flow: row nowrap;
 
         }
 
@@ -15,8 +20,13 @@
             background-color: lightskyblue;
             border: 1px solid black;
             text-align: center;
-            flex: auto;
-            
+            flex-basis: 90px;
+           
+        }
+
+        .oi {
+            width: 90px;
+            background-color: purple;
         }
     </style>
 </head>
@@ -31,6 +41,9 @@
         <div class="item">G</div>
 
 
+    </div>
+    <div class="oi">
+        oi
     </div>
 </body>
 </html>
